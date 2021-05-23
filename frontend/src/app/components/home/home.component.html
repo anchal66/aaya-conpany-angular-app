@@ -10,3 +10,23 @@
         </div>
     </ng-template>
 </ngb-carousel>
+<div>
+    <h2 class="text-center py-3 mt-3">Our Aim</h2>
+    <ul class="list-group">
+        <li class="list-group-item">To set up more material recovery facilities and recycling facilities.</li>
+        <li class="list-group-item">Formalisation of informal markets, enabling better recovery of recyclable materials
+            through traceable collection and recycling chains.</li>
+        <li class="list-group-item">To engage with waste generators, bringing about behavioral changes like segregation
+            at source.</li>
+        <li class="list-group-item">To set up micro labs for innovation of waste.</li>
+        <li class="list-group-item">To make final products out of every kind of waste</li>
+    </ul>
+</div>
+
+<div>
+    <i class="bi bi-alarm"></i>
+    <h2 class="text-center py-3 mt-3">FACTS</h2>
+    <ul class="list-group" *ngFor="let fact of facts">
+        <li class="list-group-item"><i class="{{fact.icon}}"></i>{{fact.text}}</li>
+    </ul>
+</div>
