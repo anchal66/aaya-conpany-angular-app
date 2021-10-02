@@ -1,24 +1,37 @@
 <div class="row mt-2 p-4">
-    <div class="col-md-6 offset-md-3 border p-5">
-        <form #f="ngForm" (ngSubmit)="onSubmit(f)">
-            <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" class="form-control" id="name" placeholder="Enter Name" name="name" ngModel>
-            </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" class="form-control" id="email" placeholder="Enter Email" name="email" ngModel>
-            </div>
-            <div class="form-group">
-                <label for="number">Contact number</label>
-                <input type="number" class="form-control" id="number" placeholder="Enter number" name="number" ngModel>
-            </div>
-            <div class="form-group">
-                <label for="number">Enter Message</label>
-                <textarea type="number" class="form-control" id="number" placeholder="Your message"
-                    name="message" ngModel></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+  <div class="col-md-8 border p-5">
+    <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter Name" name="name" ngModel>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter Email" name="email" ngModel>
+      </div>
+      <div class="form-group">
+        <label for="number">Contact number</label>
+        <input type="number" class="form-control" id="number" placeholder="Enter number" name="number" ngModel>
+      </div>
+      <div class="form-group">
+        <label for="number">Enter Message</label>
+        <textarea type="number" class="form-control" id="number" placeholder="Your message" name="message"
+          ngModel></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+  <div class="col-md-4 bg-dark text-white flex">
+    <div>
+      <span class="flex-item">Address:-</span> AYYA Waste Management, <br>
+      Darius Residency, caranzalem, <br>
+      Panaji ,Goa- 403001.
+    </div> <br>
+    <div>
+      <span class="flex-item">Mobile no:-</span> 7004101038.
+    </div> <br>
+    <div>
+      <span class="flex-item">Email:-</span> adityak.awm@gmail.com
     </div>
+  </div>
 </div>
