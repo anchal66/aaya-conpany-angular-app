@@ -7,7 +7,7 @@ import { Component, HostListener, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  isMobile: boolean;
+  isDesktop: boolean;
 
   images = [
     { path: 'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg', text1: '', text2: 'Set up more material recovery facilities and recycling facilities' },
@@ -31,7 +31,7 @@ export class HomeComponent implements OnInit {
   }
   @HostListener('window:resize', ['$event'])
   onResize(event?) {
-    this.isMobile = window.innerWidth > 990;
+    this.isDesktop = window.innerWidth > 990;
   }
 
 }

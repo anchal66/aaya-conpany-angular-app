@@ -87,19 +87,35 @@
     </div>
   </div>
 
-  <div class="pl-5 pr-5 mt-2">
+  <div *ngIf="isDesktop" class="pl-5 pr-5 mt-2">
     <h1 class="text-center mb-3">CONTRIBUTION TO CIRCULAR ECONOMY</h1>
     <div class="text-center border p-5 ml-5 mr-5">
       <img src="../../../assets/img/img (1).png" class="img-fluid">
     </div>
   </div>
-  <div class="pl-5 pr-5 mt-5">
+
+  <div *ngIf="!isDesktop" class="mt-2">
+    <h1 class="text-center mb-3">CONTRIBUTION TO CIRCULAR ECONOMY</h1>
+    <div class="text-center border">
+      <img src="../../../assets/img/img (1).png" class="img-fluid">
+    </div>
+  </div>
+
+  <div *ngIf="isDesktop" class="pl-5 pr-5 mt-5">
     <h1 class="text-center mb-3">DATA TRACEBILITY</h1>
     <div class="text-center border p-5 ml-5 mr-5">
       <img src="../../../assets/img/img (2).png" class="img-fluid">
     </div>
   </div>
-  <div class="pl-5 pr-5 mt-5">
+
+  <div *ngIf="!isDesktop" class="mt-5">
+    <h1 class="text-center mb-3">DATA TRACEBILITY</h1>
+    <div class="text-center border">
+      <img src="../../../assets/img/img (2).png" class="img-fluid">
+    </div>
+  </div>
+
+  <div *ngIf="isDesktop" class="pl-5 pr-5 mt-5">
     <h1 class="text-center mb-3">METHOD TO MADNESS</h1>
     <div class="row">
       <div class="col-md-4">
@@ -134,4 +150,41 @@
       religious
       establishments to reach out for a systematic assessment of your waste generation.</p>
   </div>
+
+  <div *ngIf="!isDesktop" class="mt-5">
+    <h1 class="text-center mb-3">METHOD TO MADNESS</h1>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="text-center border">
+          <img src="../../../assets/img/img (3).png" class="img-fluid">
+        </div>
+      </div>
+      <div class="col-md-8">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <p class="text-muted">We collect post-consumer non-biodegradable waste either in mixed form or
+              segregated based on type (glass, metal, paper, plastic and fabric) from designated pick up
+              points.</p>
+          </li>
+          <li class="list-group-item">
+            <p class="text-muted">At the time of collection, the waste is weighed, records ore mode (by us
+              and our client).</p>
+          </li>
+          <li class="list-group-item">
+            <p class="text-muted">The collected material then enters our network of formalised Collection
+              Partners
+            </p>
+          </li>
+          <li class="list-group-item">
+            <p class="text-muted">Bulk Waste Generators that generate high volumes of waste are rewarded for
+              practicing proper segregation - through Cashbacks or stationery mode from waste.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <p class="px-5" style="font-size: small;">We invite residential, commercial, educational, industrial as well as
+      religious
+      establishments to reach out for a systematic assessment of your waste generation.</p>
+  </div>
+
 </section>

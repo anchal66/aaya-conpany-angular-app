@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { faDumpster, faExclamation, faRecycle, faShoppingBag, faSmoking, faUmbrellaBeach } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -14,10 +14,16 @@ export class WorkComponent implements OnInit {
   shoppingBag = faShoppingBag;
   dumpster = faDumpster;
   smoking = faSmoking;
+  isDesktop: boolean;
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event?) {
+    this.isDesktop = window.innerWidth > 990;
   }
 
 }

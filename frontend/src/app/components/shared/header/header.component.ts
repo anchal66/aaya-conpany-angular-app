@@ -8,7 +8,7 @@ import { Component, HostListener, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
 
   showMenu = false;
-  isMobile: boolean;
+  isDesktop: boolean;
 
   constructor() { }
 
@@ -17,7 +17,7 @@ export class HeaderComponent implements OnInit {
 
   @HostListener('window:resize', ['$event'])
   onResize(event?) {
-    this.isMobile = window.innerWidth > 990;
+    this.isDesktop = window.innerWidth > 990;
   }
 
   menuClick(){

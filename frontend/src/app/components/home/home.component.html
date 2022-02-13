@@ -1,4 +1,4 @@
-<ngb-carousel *ngIf="images && isMobile" [showNavigationArrows]="true" [showNavigationIndicators]="true" interval="5000"
+<ngb-carousel *ngIf="images && isDesktop" [showNavigationArrows]="true" [showNavigationIndicators]="true" interval="5000"
   [keyboard]="true" [pauseOnHover]="true" [wrap]="true">
   <ng-template ngbSlide *ngFor="let img of images">
     <div class="picsum-img-wrapper">
@@ -10,7 +10,7 @@
     </div>
   </ng-template>
 </ngb-carousel>
-<ngb-carousel animation="true" *ngIf="images && !isMobile" [showNavigationArrows]="true" [showNavigationIndicators]="true" interval="4000"
+<ngb-carousel animation="true" *ngIf="images && !isDesktop" [showNavigationArrows]="true" [showNavigationIndicators]="true" interval="4000"
   [keyboard]="true" [pauseOnHover]="true" [wrap]="true">
   <ng-template ngbSlide *ngFor="let img of images">
     <div class="picsum-img-wrapper">
