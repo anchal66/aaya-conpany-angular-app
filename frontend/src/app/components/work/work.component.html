@@ -1,5 +1,5 @@
 <section>
-  <div class="pl-5 pr-5">
+  <div *ngIf="isDesktop" class="pl-5 pr-5">
     <h1 class="text-center mb-3">OUR AIM</h1>
     <ul class="list-group list-group-flush">
       <li class="list-group-item">
@@ -22,7 +22,30 @@
     </ul>
   </div>
 
-  <div class="">
+  <div *ngIf="!isDesktop">
+    <h1 class="text-center mb-3">OUR AIM</h1>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">
+        <p class="text-muted">To set up more material recovery facilities and recycling facilities.</p>
+      </li>
+      <li class="list-group-item">
+        <p class="text-muted">Formalisation of informal markets, enabling better recovery of recyclable
+          materials through traceable collection and recycling chains.</p>
+      </li>
+      <li class="list-group-item">
+        <p class="text-muted">To engage with waste generators, bringing about behavioral changes like
+          segregation at source.</p>
+      </li>
+      <li class="list-group-item">
+        <p class="text-muted">To set up micro labs for innovation of waste.</p>
+      </li>
+      <li class="list-group-item">
+        <p class="text-muted">To make final products out of every kind of waste.</p>
+      </li>
+    </ul>
+  </div>
+
+  <div>
     <h1 class="text-center">FACTS</h1>
 
     <div class="card-group-flex">

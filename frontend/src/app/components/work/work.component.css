@@ -6,7 +6,7 @@
 }
 
 .card-group-flex{
-  margin: 30px;
+  margin: 30px 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
